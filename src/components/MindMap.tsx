@@ -195,7 +195,7 @@ const MindMap = () => {
           fitView
         >
           <Controls />
-          <Background color="#f8f8f8" gap={16} />
+          <Background color="transparent" gap={16} />
         </ReactFlow>
       </div>
     </div>

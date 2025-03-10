@@ -17,8 +17,43 @@
 .react-flow__node-mindmap {
   border-radius: 30px;
   padding: 10px 20px;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: transparent;
+}
+
+/* ノードの親要素の背景も透明にする */
+.react-flow__node {
+  background: transparent !important;
+}
+
+/* ノードのハンドル周りの要素も透明にする */
+.react-flow__handle {
+  background-color: #555;
+}
+
+/* ノードに関連するすべての要素の背景を透明にする */
+.react-flow__node-default,
+.react-flow__node-input,
+.react-flow__node-output,
+.react-flow__node-group,
+.react-flow__nodesselection,
+.react-flow__nodesselection-rect,
+.react-flow__selection,
+.react-flow__wrapper,
+.react-flow__pane,
+.react-flow__viewport,
+.react-flow__renderer,
+.react-flow__container {
+  background: transparent !important;
+}
+
+/* ReactFlowのすべての要素に適用 */
+.react-flow * {
+  background-color: transparent !important;
+}
+
+/* 特定のノードの背景色は保持 */
+.react-flow__node-mindmap > div {
+  background-color: inherit !important;
 }
 
 .react-flow__edge-path {

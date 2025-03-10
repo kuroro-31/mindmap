@@ -14,11 +14,10 @@ const MindMapNode: FC<MindMapNodeProps> = ({ data, id, selected }) => {
   const nodeStyle = {
     padding: "10px 20px",
     borderRadius: "30px",
-    background: data.color || "#ffffff",
+    background: data.color || "transparent",
     border: selected ? "2px solid #1a192b" : "1px solid #ddd",
     minWidth: "100px",
     textAlign: "center" as const,
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
   };
 
   // ノードをダブルクリックしたときに編集モードに切り替える
